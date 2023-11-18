@@ -24,6 +24,7 @@ position = Vector2(24, 201)
 [node name="PipeSpawner" parent="." instance=ExtResource("4_jtekr")]
 
 [node name="Bird" parent="." instance=ExtResource("1_0shrl")]
+position = Vector2(-20, -10)
 
 [node name="Fade" parent="." instance=ExtResource("6_klmt7")]
 
