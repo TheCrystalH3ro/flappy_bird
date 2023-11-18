@@ -3,6 +3,7 @@ extends Node
 @onready var bird = $"../Bird" as Bird
 @onready var pipe_spawner = $"../PipeSpawner" as PipeSpawner
 @onready var ground = $"../Ground" as Ground
+@onready var background = $"../Background" as Background
 @onready var fade = $"../Fade" as Fade
 @onready var ui = $"../UI" as UI
 
@@ -22,6 +23,7 @@ func end_game():
 		fade.play()
 
 	ground.stop()
+	background.stop()
 	bird.kill()
 	pipe_spawner.stop()
 	ui.on_game_over()

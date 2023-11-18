@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy13khes6fbd0"]
+
+[ext_resource type="Texture2D" uid="uid://bv0lkaayjgwkb" path="res://Assets/background-day.png" id="1_6cltd"]
+[ext_resource type="Script" path="res://Scenes/background.gd" id="1_iorad"]
+[ext_resource type="Script" path="res://Scenes/movable.gd" id="2_dd3cp"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iorad")
+
+[node name="Background1" type="Node2D" parent="."]
+script = ExtResource("2_dd3cp")
+speed = -20
+
+[node name="Sprite2D" type="Sprite2D" parent="Background1"]
+texture = ExtResource("1_6cltd")
+
+[node name="Background2" type="Node2D" parent="."]
+position = Vector2(288, 0)
+script = ExtResource("2_dd3cp")
+speed = -20
+
+[node name="Sprite2D" type="Sprite2D" parent="Background2"]
+texture = ExtResource("1_6cltd")

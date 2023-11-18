@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://budaxo7s3kov2"]
+[gd_scene load_steps=7 format=3 uid="uid://budaxo7s3kov2"]
 
 [ext_resource type="Texture2D" uid="uid://bq20ywhuuwc2" path="res://Assets/base.png" id="1_ukrv6"]
 [ext_resource type="Script" path="res://Scenes/ground.gd" id="1_uy2a2"]
+[ext_resource type="Script" path="res://Scenes/Ground1.gd" id="2_7a3x8"]
+[ext_resource type="Script" path="res://Scenes/Ground2.gd" id="4_opcuw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykon2"]
 size = Vector2(336, 17)
@@ -13,6 +15,7 @@ size = Vector2(336, 17)
 script = ExtResource("1_uy2a2")
 
 [node name="Ground1" type="Area2D" parent="."]
+script = ExtResource("2_7a3x8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground1"]
 texture = ExtResource("1_ukrv6")
@@ -22,7 +25,8 @@ position = Vector2(0, -45.5)
 shape = SubResource("RectangleShape2D_ykon2")
 
 [node name="Ground2" type="Area2D" parent="."]
-position = Vector2(333, 0)
+position = Vector2(333.1, 0)
+script = ExtResource("4_opcuw")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground2"]
 position = Vector2(3, 0)

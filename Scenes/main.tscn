@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://cx6sib418ecov"]
 
 [ext_resource type="PackedScene" uid="uid://bjh50hlpxv3du" path="res://Scenes/bird.tscn" id="1_0shrl"]
-[ext_resource type="Texture2D" uid="uid://bv0lkaayjgwkb" path="res://Assets/background-day.png" id="1_0u5ks"]
 [ext_resource type="Script" path="res://Scenes/GameManager.gd" id="1_j8187"]
+[ext_resource type="PackedScene" uid="uid://cy13khes6fbd0" path="res://Scenes/background.tscn" id="2_utfao"]
 [ext_resource type="PackedScene" uid="uid://budaxo7s3kov2" path="res://Scenes/ground.tscn" id="3_bjjtx"]
 [ext_resource type="PackedScene" uid="uid://de1gerie3npxv" path="res://Scenes/pipe_spawner.tscn" id="4_jtekr"]
 [ext_resource type="PackedScene" uid="uid://xit67plb37pj" path="res://Scenes/fade.tscn" id="6_klmt7"]
@@ -13,8 +13,7 @@
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("1_j8187")
 
-[node name="Background" type="Sprite2D" parent="."]
-texture = ExtResource("1_0u5ks")
+[node name="Background" parent="." instance=ExtResource("2_utfao")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
